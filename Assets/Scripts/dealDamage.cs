@@ -9,7 +9,7 @@ public class dealDamage : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            collision.gameObject.GetComponent<takeDamage>().damage(damage);
+            collision.gameObject.GetComponent<takeDamage>().Damage(damage);
         }
     }
     // Update is called once per frame

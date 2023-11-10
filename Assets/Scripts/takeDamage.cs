@@ -21,7 +21,7 @@ public class takeDamage : MonoBehaviour
 
     }
 
-    public void damage(int damage)
+    public void Damage(int damage)
     {
         if (Time.time >= nextAttackTime)
         {
@@ -33,12 +33,12 @@ public class takeDamage : MonoBehaviour
 
             if (currentHealth <= 0)
             {
-                die();
+                Die();
             }
         }
     }
 
-    void die()
+    void Die()
     {
         anim.SetBool("isDead", true);
         rb.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY;
