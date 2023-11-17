@@ -23,8 +23,6 @@ public class MovementPlayer : MonoBehaviour
     [SerializeField] private float moveSpeed = 8f;
     [SerializeField] private float jumpingAnimThreshold = .1f;
     [SerializeField] private LayerMask jumpableGround;
-    [SerializeField] private int jumpsAmount = 2;
-    private int jumps;
     
 
     // Start is called before the first frame update
@@ -35,31 +33,16 @@ public class MovementPlayer : MonoBehaviour
         anim = GetComponent<Animator>();
         coll = GetComponent<CircleCollider2D>();
         transformer = GetComponent<Transform>();
-        jumps = jumpsAmount;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (IsGrounded())
-        {
-            jumps = jumpsAmount;
-        }
-
-        if (!IsGrounded())
-        {
-            if (jumps > jumpsAmount-1)
-            {
-                jumps--;
-            }
-        }
-
         dirX = Input.GetAxis("Horizontal");
         rb.velocity = new Vector2(dirX * moveSpeed, rb.velocity.y);
 
-        if (Input.GetButtonDown("Jump") && hasMoreJumps())
+        if (Input.GetAxis("Vertical") > 0 && IsGrounded())
         {
-            jumps--;
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
         }
 
@@ -101,10 +84,6 @@ public class MovementPlayer : MonoBehaviour
 
     private bool IsGrounded(){
         return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.down, .1f, jumpableGround);
-    }
-
-    private bool hasMoreJumps(){
-        return jumps > 0;
     }
 
     private void flipCharacter(){

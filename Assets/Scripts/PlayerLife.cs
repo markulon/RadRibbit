@@ -14,20 +14,27 @@ public class PlayerLife : MonoBehaviour
     int currentHealth;
     float nextAttackTime = 0f;
 
+    public Health health;
+
+    private Vector3 initialPosition;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         currentHealth = maxHealth;
+        initialPosition = transform.position;
     }
     
     public void Damage(int damage)
     {
         if (Time.time >= nextAttackTime)
         {
+            health.ChangeHearts(-1);
+
             nextAttackTime = Time.time + invunerableTime;
                 
-            currentHealth -= damage;
+            //currentHealth -= damage;
 
             anim.SetTrigger("damage");
 
@@ -54,7 +61,8 @@ public class PlayerLife : MonoBehaviour
 
     private void RestartLevel()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        health.ChangeHearts(-1);
+        transform.position = initialPosition;
     }
 
 }
