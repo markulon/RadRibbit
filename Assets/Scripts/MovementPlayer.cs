@@ -7,15 +7,17 @@ public class MovementPlayer : MonoBehaviour
     private Rigidbody2D rb;
     private SpriteRenderer sprite;
     private Animator anim;
-    private CircleCollider2D coll;
+    private BoxCollider2D coll;
     private Transform transformer;
+    private bool climbable = false;
 
     private enum MovementPlayerState
     {
         idle,
         running,
         jumping,
-        falling
+        falling,
+        climbing
     }
 
     private float dirX = 0f;
@@ -31,7 +33,7 @@ public class MovementPlayer : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         sprite = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
-        coll = GetComponent<CircleCollider2D>();
+        coll = GetComponent<BoxCollider2D>();
         transformer = GetComponent<Transform>();
     }
 
@@ -41,13 +43,34 @@ public class MovementPlayer : MonoBehaviour
         dirX = Input.GetAxis("Horizontal");
         rb.velocity = new Vector2(dirX * moveSpeed, rb.velocity.y);
 
-        if (Input.GetAxis("Vertical") > 0 && IsGrounded())
+        if (Input.GetAxis("Vertical") > 0 && climbable)
+        {
+            rb.velocity = new Vector2(rb.velocity.x, moveSpeed);
+        }
+
+        if (Input.GetAxis("Vertical") > 0 && IsGrounded() && !climbable)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
         }
 
         UpdateAnimationState();
 
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Ladder"))
+        {
+            climbable = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Ladder"))
+        {
+            climbable = false;
+        }
     }
 
     private void UpdateAnimationState()
@@ -77,6 +100,11 @@ public class MovementPlayer : MonoBehaviour
         else if (rb.velocity.y < (jumpingAnimThreshold*(-1)))
         {
             state = MovementPlayerState.falling;
+        }
+
+        if(climbable && Input.GetAxis("Vertical") > 0)
+        {
+            state = MovementPlayerState.climbing;
         }
 
         anim.SetInteger("movementPlayerState", (int)state);

@@ -5,9 +5,10 @@ using UnityEngine;
 public class moveEnemy : MonoBehaviour
 {
     private Rigidbody2D rb;
-    private CircleCollider2D coll;
+    private BoxCollider2D coll;
     private SpriteRenderer sprite;
     [SerializeField] private LayerMask collidableObjects;
+    private Transform transformer;
 
     public float speed = 1f;
     private int dirX = -1;
@@ -15,35 +16,30 @@ public class moveEnemy : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        coll = GetComponent<CircleCollider2D>();
+        coll = GetComponent<BoxCollider2D>();
         sprite = GetComponent<SpriteRenderer>();
+        transformer = GetComponent<Transform>();
     }
 
     // Update is called once per frame
     void Update()
     {
         rb.velocity = new Vector2(dirX * speed, rb.velocity.y);
-
-        if (dirX < 0f)
-        {
-            sprite.flipX = false;
-        }
-        else if (dirX > 0f)
-        {
-            sprite.flipX = true;
-        }
-        onCollisionChangeDirection();
+        checkCollision();
     }
 
-    private void onCollisionChangeDirection()
+    private void checkCollision()
     {
-        if(Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.left, .1f, collidableObjects))
+        if(Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.left, .1f, collidableObjects) || Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.right, .1f, collidableObjects))
         {
-            dirX = 1;
+            flipCharacter();
         }
-        else if (Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.right, .1f, collidableObjects))
-        {
-            dirX = -1;
-        }
+    }
+
+    
+    private void flipCharacter(){
+        Vector3 scale = transformer.localScale;
+        scale.x *= -1;
+        transformer.localScale = scale;
     }
 }
