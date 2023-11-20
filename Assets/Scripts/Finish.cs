@@ -19,7 +19,7 @@ public class Finish : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             isFinished = true;
-            //finishSound.Play();
+            FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Portal", GetComponent<Transform>().position);
             Invoke("CompleteLevel", 1f);
         }
     }

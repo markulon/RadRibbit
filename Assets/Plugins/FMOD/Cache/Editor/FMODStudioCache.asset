@@ -42,7 +42,7 @@ MonoBehaviour:
   Path: ../Spilldesign Fmod prosjekt/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638360392886109420
+  lastModified: 638360790398064551
   FileSizes:
   - Name: Desktop
     Value: 1632
@@ -143,10 +143,10 @@ MonoBehaviour:
   Path: ../Spilldesign Fmod prosjekt/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638360392888350815
+  lastModified: 638360793438190014
   FileSizes:
   - Name: Desktop
-    Value: 234080
+    Value: 248960
   Exists: 1
 --- !u!114 &-4989382252724140774
 MonoBehaviour:
@@ -190,10 +190,10 @@ MonoBehaviour:
   Path: ../Spilldesign Fmod prosjekt/Build/Desktop/Foley.bank
   Name: Foley
   StudioPath: bank:/Foley
-  lastModified: 638360392890146863
+  lastModified: 638360790055180164
   FileSizes:
   - Name: Desktop
-    Value: 73824
+    Value: 125216
   Exists: 1
 --- !u!114 &-1751375448899031704
 MonoBehaviour:
@@ -311,12 +311,14 @@ MonoBehaviour:
   - {fileID: -6560710229879426249}
   - {fileID: 7517763325459543876}
   - {fileID: -843669969220892904}
+  - {fileID: 6674736773563690402}
+  - {fileID: 4431523935938853661}
   EditorParameters: []
   MasterBanks:
   - {fileID: -8273952058211825454}
   StringsBanks:
   - {fileID: 5348623622539554809}
-  cacheTime: 638360392890146863
+  cacheTime: 638360793438190014
   cacheVersion: 131608
 --- !u!114 &290386677777832807
 MonoBehaviour:
@@ -412,6 +414,33 @@ MonoBehaviour:
   - Name: Desktop
     Value: 4922720
   Exists: 1
+--- !u!114 &4431523935938853661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Portal
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Portal
+  Guid:
+    Data1: 701888759
+    Data2: 1327824431
+    Data3: -572701544
+    Data4: -1751869678
+  Banks:
+  - {fileID: -5779849419558247697}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1405
 --- !u!114 &5348623622539554809
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -427,10 +456,10 @@ MonoBehaviour:
   Path: ../Spilldesign Fmod prosjekt/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638360392886120737
+  lastModified: 638360790398082519
   FileSizes:
   - Name: Desktop
-    Value: 1786
+    Value: 1864
   Exists: 1
 --- !u!114 &5363412033414948003
 MonoBehaviour:
@@ -486,6 +515,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 46451
+--- !u!114 &6674736773563690402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Cage_Unlock
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Cage_Unlock
+  Guid:
+    Data1: 1712249609
+    Data2: 1118530198
+    Data3: -580326979
+    Data4: -633712006
+  Banks:
+  - {fileID: -4805490704216808314}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1114
 --- !u!114 &7151158383539669372
 MonoBehaviour:
   m_ObjectHideFlags: 0
