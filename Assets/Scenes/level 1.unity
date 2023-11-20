@@ -1002,10 +1002,10 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 155977480
-      Data2: 1339655589
-      Data3: 2117092009
-      Data4: 151634031
+      Data1: 180885442
+      Data2: 1270982273
+      Data3: 911056831
+      Data4: -928729108
     Path: event:/Music/Lv 1
   Event: 
   PlayEvent: 1
@@ -1066,6 +1066,43 @@ Transform:
   - {fileID: 2080400711}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1425024287 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5653472738128829501, guid: 854b537bd679f7947ab106e4408ad9e2,
+    type: 3}
+  m_PrefabInstance: {fileID: 4024323199992197943}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1425024292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1425024287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Player
+  EventReference:
+    Guid:
+      Data1: 807257541
+      Data2: 1188354853
+      Data3: -885100111
+      Data4: 776325422
+    Path: event:/SFX/Mushroom
+  Event: 
+  PlayEvent: 2
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1892282219
 GameObject:
   m_ObjectHideFlags: 0
@@ -5155,6 +5192,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4441969529535953469, guid: 68926946dcad1394fb6d32bbc3a014b6,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8001670520882239513, guid: 68926946dcad1394fb6d32bbc3a014b6,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -5207,6 +5249,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsTrigger
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 792213278079665257, guid: 93f4e2de7ff9cc545b5a4c052ec86d65,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2056495515539790441, guid: 93f4e2de7ff9cc545b5a4c052ec86d65,
         type: 3}
@@ -5278,6 +5325,16 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6986042931000694716, guid: 93f4e2de7ff9cc545b5a4c052ec86d65,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6986042931000694716, guid: 93f4e2de7ff9cc545b5a4c052ec86d65,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7588962365034756645, guid: 93f4e2de7ff9cc545b5a4c052ec86d65,
         type: 3}
       propertyPath: m_Layer
@@ -5298,6 +5355,11 @@ PrefabInstance:
       propertyPath: health
       value: 
       objectReference: {fileID: 1921523666}
+    - target: {fileID: 8379705633979558223, guid: 93f4e2de7ff9cc545b5a4c052ec86d65,
+        type: 3}
+      propertyPath: maxHealth
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 8721079570985074818, guid: 93f4e2de7ff9cc545b5a4c052ec86d65,
         type: 3}
       propertyPath: m_LocalScale.y
@@ -5535,7 +5597,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5653472738128829501, guid: 854b537bd679f7947ab106e4408ad9e2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1425024292}
   m_SourcePrefab: {fileID: 100100000, guid: 854b537bd679f7947ab106e4408ad9e2, type: 3}
 --- !u!1001 &6762547766304786299
 PrefabInstance:
