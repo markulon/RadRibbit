@@ -20,7 +20,7 @@ public class Finish : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player") && reachCage.unlockedCage == true)
         {
-            FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Portal", GetComponent<Transform>().position);
+            FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Portal/Portal_Go", GetComponent<Transform>().position);
             Invoke("CompleteLevel", 1f);
         }
         

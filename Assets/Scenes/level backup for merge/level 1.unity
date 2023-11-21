@@ -663,10 +663,10 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 155977480
-      Data2: 1339655589
-      Data3: 2117092009
-      Data4: 151634031
+      Data1: 180885442
+      Data2: 1270982273
+      Data3: 911056831
+      Data4: -928729108
     Path: event:/Music/Lv 1
   Event: 
   PlayEvent: 1
