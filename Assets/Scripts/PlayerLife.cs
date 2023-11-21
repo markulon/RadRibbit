@@ -50,6 +50,8 @@ public class PlayerLife : MonoBehaviour
         if (collision.gameObject.CompareTag("OutOfBounds"))
         {
             RestartLevel();
+             //FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/TMP_Death", GetComponent<Transform>().position);
+
         }
     }
 

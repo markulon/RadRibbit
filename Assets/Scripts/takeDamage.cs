@@ -31,6 +31,8 @@ public class takeDamage : MonoBehaviour
 
             anim.SetTrigger("damage");
 
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Foley/RadMan/RadMan_Hurt", GetComponent<Transform>().position);
+
             if (currentHealth <= 0)
             {
                 Die();

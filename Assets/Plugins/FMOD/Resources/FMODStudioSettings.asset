@@ -510,6 +510,7 @@ MonoBehaviour:
   - Master
   Banks:
   - Ambience
+  - Foley
   - Music
   - SFX
   BanksToLoad: []
