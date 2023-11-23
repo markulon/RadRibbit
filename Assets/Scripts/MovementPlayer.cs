@@ -23,7 +23,6 @@ public class MovementPlayer : MonoBehaviour
     private float dirX = 0f;
     [SerializeField] private float jumpForce = 10f;
     [SerializeField] private float moveSpeed = 8f;
-    [SerializeField] private float jumpingAnimThreshold = .1f;
     [SerializeField] private LayerMask jumpableGround;
     
 
@@ -93,11 +92,11 @@ public class MovementPlayer : MonoBehaviour
         }
 
         //changing the jumping animation
-        if (rb.velocity.y > jumpingAnimThreshold)
+        if (rb.velocity.y > 0.1 && !IsGrounded())
         {
             state = MovementPlayerState.jumping;
         }
-        else if (rb.velocity.y < (jumpingAnimThreshold*(-1)))
+        else if (rb.velocity.y < -0.1 && !IsGrounded())
         {
             state = MovementPlayerState.falling;
         }
