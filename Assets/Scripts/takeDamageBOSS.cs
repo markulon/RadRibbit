@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class takeDamageBOSS : MonoBehaviour
+public class takeDamage : MonoBehaviour
 {
     private Rigidbody2D rb;
     public int maxHealth = 100;
@@ -10,8 +10,6 @@ public class takeDamageBOSS : MonoBehaviour
     private Animator anim;
     // Start is called before the first frame update
     
-    public float invunerableTime = 1f;
-    float nextAttackTime = 0f;
 
     void Start()
     {
@@ -23,10 +21,8 @@ public class takeDamageBOSS : MonoBehaviour
 
     public void Damage(int damage)
     {
-        if (Time.time >= nextAttackTime)
-        {
-            nextAttackTime = Time.time + invunerableTime;
-                
+        if (anim.GetBool("isDead") == false)
+        {                
             currentHealth -= damage;
 
             anim.SetTrigger("damage");
@@ -40,11 +36,10 @@ public class takeDamageBOSS : MonoBehaviour
         }
     }
 
-    private void Die()
+    void Die()
     {
         anim.SetBool("isDead", true);
         rb.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY;
-        GetComponent<moveEnemy>().enabled = false;
         GetComponent<Collider2D>().enabled = false;
     }
 }

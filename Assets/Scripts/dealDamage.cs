@@ -7,7 +7,7 @@ public class dealDamage : MonoBehaviour
     public int damage = 50;
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Enemy"))
+        if (collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("Boss"))
         {
             collision.gameObject.GetComponent<takeDamage>().Damage(damage);
         }

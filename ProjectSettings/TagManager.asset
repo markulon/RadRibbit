@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - OutOfBounds
   - Ladder
+  - Boss
   layers:
   - Default
   - TransparentFX
