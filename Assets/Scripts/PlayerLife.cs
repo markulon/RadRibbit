@@ -10,7 +10,7 @@ public class PlayerLife : MonoBehaviour
     private Animator anim;
     
     public float invunerableTime = 1f;
-    public int maxHealth = 100;
+    public int maxHealth = 3;
     int currentHealth;
     float nextAttackTime = 0f;
 
@@ -30,7 +30,7 @@ public class PlayerLife : MonoBehaviour
     {
         if (Time.time >= nextAttackTime)
         {
-            health.ChangeHearts(-1);
+            health.ChangeHearts(-damage);
 
             nextAttackTime = Time.time + invunerableTime;
                 

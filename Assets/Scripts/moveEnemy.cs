@@ -38,6 +38,7 @@ public class moveEnemy : MonoBehaviour
 
     
     private void flipCharacter(){
+        speed = -speed;
         Vector3 scale = transformer.localScale;
         scale.x *= -1;
         transformer.localScale = scale;
