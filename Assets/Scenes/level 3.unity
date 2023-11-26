@@ -574,6 +574,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4441969529535953469, guid: 68926946dcad1394fb6d32bbc3a014b6,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8001670520882239513, guid: 68926946dcad1394fb6d32bbc3a014b6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -599,7 +604,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelCamera
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4441969529535953469, guid: 68926946dcad1394fb6d32bbc3a014b6, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -620,6 +626,7 @@ GameObject:
   - component: {fileID: 427234113}
   - component: {fileID: 427234115}
   - component: {fileID: 427234116}
+  - component: {fileID: 427234117}
   m_Layer: 0
   m_Name: Boss
   m_TagString: Boss
@@ -855,6 +862,37 @@ CapsuleCollider2D:
   m_Offset: {x: -8.43, y: -2.57}
   m_Size: {x: 20.5, y: 9.94}
   m_Direction: 1
+--- !u!114 &427234117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 427234107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1358799379
+      Data2: 1126681147
+      Data3: -751753595
+      Data4: -39460350
+    Path: event:/Foley/ToadBoss/ToadBoss_Spawn
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &490894511
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1118,11 +1156,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: -1863003352
-      Data2: 1328983708
-      Data3: 1107565964
-      Data4: 1318163811
-    Path: event:/Music/Lv 2
+      Data1: 1100255247
+      Data2: 1307640208
+      Data3: 1673871236
+      Data4: 458933651
+    Path: event:/Music/Boss
   Event: 
   PlayEvent: 1
   StopEvent: 2

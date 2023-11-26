@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{d1e071bb-7e48-463d-95d2-c10aaabf12c0}">
+		<property name="assetPath">
+			<value>Doors, Hardware, Lock, Unlock Metal Gate, Security Grill Door SND26177.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>96</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.73496874999999995</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{cda93a9b-ed27-4eda-8765-0c0a183c26a9}</destination>
+		</relationship>
+	</object>
+</objects>

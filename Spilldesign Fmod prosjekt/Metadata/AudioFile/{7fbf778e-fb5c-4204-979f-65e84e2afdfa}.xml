@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{7fbf778e-fb5c-4204-979f-65e84e2afdfa}">
+		<property name="assetPath">
+			<value>User Interface, Alert, Achievement, Level Up, Notification, Goal Achieved, Positive 02 SND86872 1.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>96</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>3.7199166666666668</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{cda93a9b-ed27-4eda-8765-0c0a183c26a9}</destination>
+		</relationship>
+	</object>
+</objects>

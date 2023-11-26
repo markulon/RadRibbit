@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{86337701-5c82-4c9f-bd66-1677a1b33464}">
+		<property name="assetPath">
+			<value>Natural Disaster, Earthquake, Metal Rattle, Resonation, Low Bass, Deep, Vibration, Rumble 01 SND46277.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>192</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>1.9778333333333333</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{cda93a9b-ed27-4eda-8765-0c0a183c26a9}</destination>
+		</relationship>
+	</object>
+</objects>
