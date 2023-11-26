@@ -9,6 +9,7 @@ TagManager:
   - OutOfBounds
   - Ladder
   - Boss
+  - Tounge
   layers:
   - Default
   - TransparentFX

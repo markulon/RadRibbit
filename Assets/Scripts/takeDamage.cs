@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class takeDamageBOSS : MonoBehaviour
+public class takeDamage : MonoBehaviour
 {
     private Rigidbody2D rb;
     public int maxHealth = 100;

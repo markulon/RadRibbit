@@ -63,8 +63,8 @@ public class PlayerLife : MonoBehaviour
 
     private void RestartLevel()
     {
-        health.ChangeHearts(-1);
         transform.position = initialPosition;
+        health.ChangeHearts(-1);
     }
 
 }

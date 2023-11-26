@@ -5,42 +5,54 @@ using UnityEngine;
 public class moveEnemy : MonoBehaviour
 {
     private Rigidbody2D rb;
-    private BoxCollider2D coll;
     private SpriteRenderer sprite;
-    [SerializeField] private LayerMask collidableObjects;
     private Transform transformer;
 
+    public GameObject[] waypoints;
+    private int currentWaypointIndex = 0;
     public float speed = 1f;
-    private int dirX = -1;
-    // Start is called before the first frame update
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        coll = GetComponent<BoxCollider2D>();
         sprite = GetComponent<SpriteRenderer>();
         transformer = GetComponent<Transform>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        rb.velocity = new Vector2(dirX * speed, rb.velocity.y);
-        checkCollision();
+        if (waypoints.Length == 0) return; // Check if waypoints are assigned
+
+        MoveTowardsWaypoint();
+        CheckWaypointDistance();
     }
 
-    private void checkCollision()
+    private void MoveTowardsWaypoint()
     {
-        if(Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.left, .1f, collidableObjects) || Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.right, .1f, collidableObjects))
+        // Determine the direction to the current waypoint
+        float direction = (waypoints[currentWaypointIndex].transform.position.x > transformer.position.x) ? 1 : -1;
+
+        // Move the enemy
+        rb.velocity = new Vector2(direction * speed, rb.velocity.y);
+
+        // Flip the sprite if needed
+        if ((direction > 0 && !sprite.flipX) || (direction < 0 && sprite.flipX))
         {
-            flipCharacter();
+            sprite.flipX = !sprite.flipX;
         }
     }
 
-    
-    private void flipCharacter(){
-        speed = -speed;
-        Vector3 scale = transformer.localScale;
-        scale.x *= -1;
-        transformer.localScale = scale;
+    private void CheckWaypointDistance()
+    {
+        // Check if the enemy has reached the current waypoint
+        if (Vector2.Distance(transformer.position, waypoints[currentWaypointIndex].transform.position) < 0.1f)
+        {
+            // Switch to the next waypoint
+            currentWaypointIndex++;
+            if (currentWaypointIndex >= waypoints.Length)
+            {
+                currentWaypointIndex = 0; // Reset to the first waypoint
+            }
+        }
     }
 }

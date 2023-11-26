@@ -8,7 +8,7 @@ public class Finish : MonoBehaviour
     //private AudioSource finishSound;
 
     public Animator targetAnimator; // Assign in the inspector
-    public ReachCage reachCage; // Assign in the inspector
+    public bool unlocked; // Assign in the inspector
 
     void Start()
     {
@@ -18,7 +18,7 @@ public class Finish : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player") && reachCage.unlockedCage == true)
+        if (collision.gameObject.CompareTag("Player") && unlocked == true)
         {
             FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Portal/Portal_Go", GetComponent<Transform>().position);
             Invoke("CompleteLevel", 1f);
@@ -33,7 +33,7 @@ public class Finish : MonoBehaviour
 
     private void Update()
     {
-        if (reachCage.unlockedCage == true)
+        if (unlocked == true)
         {
             targetAnimator.SetBool("unlockedCage", true);
         }

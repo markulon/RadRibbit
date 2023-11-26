@@ -7,19 +7,24 @@ public class ReachCage : MonoBehaviour
 {
 
     public bool unlockedCage = false;
+    private Animator anim;
+
+    public Finish finish;
 
     void Start()
     {
+        anim = GetComponent<Animator>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Tounge"))
         {
             unlockedCage = true;
+            anim.SetTrigger("openCage");
+            finish.unlocked = true;
             //maybe play a sound here
             //it will
-
 
         }
     }
