@@ -229,6 +229,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-2570283946062770230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Foley/Froggy/Froggy_Hurt
+  m_EditorClassIdentifier: 
+  Path: event:/Foley/Froggy/Froggy_Hurt
+  Guid:
+    Data1: 179875229
+    Data2: 1092319150
+    Data3: 1141202829
+    Data4: 623529238
+  Banks:
+  - {fileID: 3051894927576781218}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2062
 --- !u!114 &-1751375448899031704
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -282,7 +309,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 2714
 --- !u!114 &-843669969220892904
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -325,7 +352,7 @@ MonoBehaviour:
   Path: Spilldesign Fmod prosjekt/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638366127448670611
+  lastModified: 638366189322129147
   FileSizes:
   - Name: Desktop
     Value: 1632
@@ -370,12 +397,14 @@ MonoBehaviour:
   - {fileID: -5534554135859792949}
   - {fileID: 6750424524620532674}
   - {fileID: -8558979541034391310}
+  - {fileID: -2570283946062770230}
+  - {fileID: 7501567862884456493}
   EditorParameters: []
   MasterBanks:
   - {fileID: -722985877425769519}
   StringsBanks:
   - {fileID: 9099841638045380897}
-  cacheTime: 638366127484350391
+  cacheTime: 638366242328750180
   cacheVersion: 131608
 --- !u!114 &290386677777832807
 MonoBehaviour:
@@ -446,10 +475,10 @@ MonoBehaviour:
   Path: Spilldesign Fmod prosjekt/Build/Desktop/Foley.bank
   Name: Foley
   StudioPath: bank:/Foley
-  lastModified: 638366127448590581
+  lastModified: 638366242328750180
   FileSizes:
   - Name: Desktop
-    Value: 184000
+    Value: 233024
   Exists: 1
 --- !u!114 &4386339468169007538
 MonoBehaviour:
@@ -633,6 +662,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &7501567862884456493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Foley/Froggy/Froggy_Jump
+  m_EditorClassIdentifier: 
+  Path: event:/Foley/Froggy/Froggy_Jump
+  Guid:
+    Data1: -1076878108
+    Data2: 1082073169
+    Data3: -2051526258
+    Data4: -1050129142
+  Banks:
+  - {fileID: 3051894927576781218}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1500
 --- !u!114 &7517763325459543876
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -702,8 +758,8 @@ MonoBehaviour:
   Path: Spilldesign Fmod prosjekt/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638366127448685018
+  lastModified: 638366189322151943
   FileSizes:
   - Name: Desktop
-    Value: 2022
+    Value: 2092
   Exists: 1
