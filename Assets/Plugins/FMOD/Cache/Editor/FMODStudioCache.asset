@@ -19,7 +19,7 @@ MonoBehaviour:
     Data3: -411610976
     Data4: -1266210380
   Banks:
-  - {fileID: -5779849419558247697}
+  - {fileID: -5012134216732322339}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -27,7 +27,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 15
   Length: 22375
---- !u!114 &-8273952058211825454
+--- !u!114 &-8558979541034391310
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -36,17 +36,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Foley/ToadBoss/ToadBoss_Spawn
   m_EditorClassIdentifier: 
-  Path: ../Spilldesign Fmod prosjekt/Build/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 638361660433866073
-  FileSizes:
-  - Name: Desktop
-    Value: 1632
-  Exists: 1
+  Path: event:/Foley/ToadBoss/ToadBoss_Spawn
+  Guid:
+    Data1: -1358799379
+    Data2: 1126681147
+    Data3: -751753595
+    Data4: -39460350
+  Banks:
+  - {fileID: 3051894927576781218}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-7298741949372918691
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66,7 +73,7 @@ MonoBehaviour:
     Data3: 1697044124
     Data4: 1950355389
   Banks:
-  - {fileID: 999059881528282598}
+  - {fileID: 4386339468169007538}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -93,7 +100,7 @@ MonoBehaviour:
     Data3: -1432238149
     Data4: 1757537691
   Banks:
-  - {fileID: 3441523305027329349}
+  - {fileID: -5752816678623386511}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -120,7 +127,7 @@ MonoBehaviour:
     Data3: 525463229
     Data4: -2082216645
   Banks:
-  - {fileID: -4805490704216808314}
+  - {fileID: 3051894927576781218}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -128,7 +135,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &-5779849419558247697
+--- !u!114 &-5752816678623386511
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -138,15 +145,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/SFX.bank
+  m_Name: bank:/Music.bank
   m_EditorClassIdentifier: 
-  Path: ../Spilldesign Fmod prosjekt/Build/Desktop/SFX.bank
-  Name: SFX
-  StudioPath: bank:/SFX
-  lastModified: 638361660439117768
+  Path: Spilldesign Fmod prosjekt/Build/Desktop/Music.bank
+  Name: Music
+  StudioPath: bank:/Music
+  lastModified: 638366127484350391
   FileSizes:
   - Name: Desktop
-    Value: 339456
+    Value: 4922720
   Exists: 1
 --- !u!114 &-5534554135859792949
 MonoBehaviour:
@@ -167,7 +174,7 @@ MonoBehaviour:
     Data3: -572701544
     Data4: -1751869678
   Banks:
-  - {fileID: -5779849419558247697}
+  - {fileID: -5012134216732322339}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -175,6 +182,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1905
+--- !u!114 &-5012134216732322339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/SFX.bank
+  m_EditorClassIdentifier: 
+  Path: Spilldesign Fmod prosjekt/Build/Desktop/SFX.bank
+  Name: SFX
+  StudioPath: bank:/SFX
+  lastModified: 638361660439117768
+  FileSizes:
+  - Name: Desktop
+    Value: 339456
+  Exists: 1
 --- !u!114 &-4989382252724140774
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -194,7 +221,7 @@ MonoBehaviour:
     Data3: 1846726835
     Data4: 783797092
   Banks:
-  - {fileID: -5779849419558247697}
+  - {fileID: -5012134216732322339}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -202,26 +229,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &-4805490704216808314
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Foley.bank
-  m_EditorClassIdentifier: 
-  Path: ../Spilldesign Fmod prosjekt/Build/Desktop/Foley.bank
-  Name: Foley
-  StudioPath: bank:/Foley
-  lastModified: 638360790055180164
-  FileSizes:
-  - Name: Desktop
-    Value: 125216
-  Exists: 1
 --- !u!114 &-1751375448899031704
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -241,7 +248,7 @@ MonoBehaviour:
     Data3: 695967369
     Data4: 602647972
   Banks:
-  - {fileID: -5779849419558247697}
+  - {fileID: -5012134216732322339}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -268,7 +275,7 @@ MonoBehaviour:
     Data3: -630066532
     Data4: 510533770
   Banks:
-  - {fileID: -4805490704216808314}
+  - {fileID: 3051894927576781218}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -295,7 +302,7 @@ MonoBehaviour:
     Data3: -1717283911
     Data4: -139687467
   Banks:
-  - {fileID: -4805490704216808314}
+  - {fileID: 3051894927576781218}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -303,6 +310,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 419
+--- !u!114 &-722985877425769519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Spilldesign Fmod prosjekt/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638366127448670611
+  FileSizes:
+  - Name: Desktop
+    Value: 1632
+  Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -316,12 +343,12 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 5348623622539554809}
-  - {fileID: -8273952058211825454}
-  - {fileID: 999059881528282598}
-  - {fileID: 3441523305027329349}
-  - {fileID: -5779849419558247697}
-  - {fileID: -4805490704216808314}
+  - {fileID: 9099841638045380897}
+  - {fileID: 4386339468169007538}
+  - {fileID: 3051894927576781218}
+  - {fileID: -722985877425769519}
+  - {fileID: -5752816678623386511}
+  - {fileID: -5012134216732322339}
   EditorEvents:
   - {fileID: 5790078551024598997}
   - {fileID: -7298741949372918691}
@@ -341,12 +368,14 @@ MonoBehaviour:
   - {fileID: 6674736773563690402}
   - {fileID: 5872057260663098316}
   - {fileID: -5534554135859792949}
+  - {fileID: 6750424524620532674}
+  - {fileID: -8558979541034391310}
   EditorParameters: []
   MasterBanks:
-  - {fileID: -8273952058211825454}
+  - {fileID: -722985877425769519}
   StringsBanks:
-  - {fileID: 5348623622539554809}
-  cacheTime: 638361660439117768
+  - {fileID: 9099841638045380897}
+  cacheTime: 638366127484350391
   cacheVersion: 131608
 --- !u!114 &290386677777832807
 MonoBehaviour:
@@ -367,7 +396,7 @@ MonoBehaviour:
     Data3: 459467926
     Data4: 1946883566
   Banks:
-  - {fileID: -4805490704216808314}
+  - {fileID: 3051894927576781218}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -394,7 +423,7 @@ MonoBehaviour:
     Data3: 1673871236
     Data4: 458933651
   Banks:
-  - {fileID: 3441523305027329349}
+  - {fileID: -5752816678623386511}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -402,7 +431,27 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 17777
---- !u!114 &999059881528282598
+--- !u!114 &3051894927576781218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Foley.bank
+  m_EditorClassIdentifier: 
+  Path: Spilldesign Fmod prosjekt/Build/Desktop/Foley.bank
+  Name: Foley
+  StudioPath: bank:/Foley
+  lastModified: 638366127448590581
+  FileSizes:
+  - Name: Desktop
+    Value: 184000
+  Exists: 1
+--- !u!114 &4386339468169007538
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -414,53 +463,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
   m_Name: bank:/Ambience.bank
   m_EditorClassIdentifier: 
-  Path: ../Spilldesign Fmod prosjekt/Build/Desktop/Ambience.bank
+  Path: Spilldesign Fmod prosjekt/Build/Desktop/Ambience.bank
   Name: Ambience
   StudioPath: bank:/Ambience
   lastModified: 638360392886359587
   FileSizes:
   - Name: Desktop
     Value: 466368
-  Exists: 1
---- !u!114 &3441523305027329349
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Music.bank
-  m_EditorClassIdentifier: 
-  Path: ../Spilldesign Fmod prosjekt/Build/Desktop/Music.bank
-  Name: Music
-  StudioPath: bank:/Music
-  lastModified: 638360392887805285
-  FileSizes:
-  - Name: Desktop
-    Value: 4922720
-  Exists: 1
---- !u!114 &5348623622539554809
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: ../Spilldesign Fmod prosjekt/Build/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 638361660433880469
-  FileSizes:
-  - Name: Desktop
-    Value: 1922
   Exists: 1
 --- !u!114 &5363412033414948003
 MonoBehaviour:
@@ -481,7 +490,7 @@ MonoBehaviour:
     Data3: 1107565964
     Data4: 1318163811
   Banks:
-  - {fileID: 3441523305027329349}
+  - {fileID: -5752816678623386511}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -508,7 +517,7 @@ MonoBehaviour:
     Data3: 911056831
     Data4: -928729108
   Banks:
-  - {fileID: 3441523305027329349}
+  - {fileID: -5752816678623386511}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -535,7 +544,7 @@ MonoBehaviour:
     Data3: 960701597
     Data4: 1968050914
   Banks:
-  - {fileID: -5779849419558247697}
+  - {fileID: -5012134216732322339}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -562,7 +571,7 @@ MonoBehaviour:
     Data3: -580326979
     Data4: -633712006
   Banks:
-  - {fileID: -4805490704216808314}
+  - {fileID: 3051894927576781218}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -570,6 +579,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1114
+--- !u!114 &6750424524620532674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Foley/ToadBoss/ToadBoss_Hurt
+  m_EditorClassIdentifier: 
+  Path: event:/Foley/ToadBoss/ToadBoss_Hurt
+  Guid:
+    Data1: 12034531
+    Data2: 1319183976
+    Data3: -929525349
+    Data4: 1085967320
+  Banks:
+  - {fileID: 3051894927576781218}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &7151158383539669372
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -589,7 +625,7 @@ MonoBehaviour:
     Data3: -1292943681
     Data4: -2019080622
   Banks:
-  - {fileID: -5779849419558247697}
+  - {fileID: -5012134216732322339}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -616,7 +652,7 @@ MonoBehaviour:
     Data3: -885100111
     Data4: 776325422
   Banks:
-  - {fileID: -5779849419558247697}
+  - {fileID: -5012134216732322339}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -643,7 +679,7 @@ MonoBehaviour:
     Data3: 1382786186
     Data4: -396732477
   Banks:
-  - {fileID: 3441523305027329349}
+  - {fileID: -5752816678623386511}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -651,3 +687,23 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 96000
+--- !u!114 &9099841638045380897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Spilldesign Fmod prosjekt/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638366127448685018
+  FileSizes:
+  - Name: Desktop
+    Value: 2022
+  Exists: 1
