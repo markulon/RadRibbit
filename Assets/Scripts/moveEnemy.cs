@@ -12,6 +12,8 @@ public class moveEnemy : MonoBehaviour
     private int currentWaypointIndex = 0;
     public float speed = 1f;
 
+    public bool facingRight = false;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -36,16 +38,17 @@ public class moveEnemy : MonoBehaviour
         rb.velocity = new Vector2(direction * speed, rb.velocity.y);
 
         // Flip the sprite if needed
-        if ((direction > 0 && !sprite.flipX) || (direction < 0 && sprite.flipX))
+        if ((direction > 0 && facingRight) || (direction < 0 && !facingRight))
         {
-            sprite.flipX = !sprite.flipX;
+            facingRight = !facingRight;
+            sprite.flipX = facingRight;
         }
     }
 
     private void CheckWaypointDistance()
     {
-        // Check if the enemy has reached the current waypoint
-        if (Vector2.Distance(transformer.position, waypoints[currentWaypointIndex].transform.position) < 0.1f)
+        // Check if the enemy has reached the x-coordinate of the current waypoint
+        if (Mathf.Abs(transformer.position.x - waypoints[currentWaypointIndex].transform.position.x) < 0.1f)
         {
             // Switch to the next waypoint
             currentWaypointIndex++;
