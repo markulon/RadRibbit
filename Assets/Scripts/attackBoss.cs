@@ -16,6 +16,7 @@ public class attackBoss : MonoBehaviour
     private BoxCollider2D coll;
     [SerializeField] private LayerMask jumpableGround;
     private bool isPlayerInSight = false;
+    public Finish finish;
 
     void Start()
     {
@@ -77,10 +78,14 @@ public class attackBoss : MonoBehaviour
 
     private void Flip()
     {
-        isFacingRight = !isFacingRight;
-        Vector3 scale = transformer.localScale;
-        scale.x *= -1;
-        transformer.localScale = scale;
+        if (finish.unlocked == false)
+        {
+            isFacingRight = !isFacingRight;
+            Vector3 scale = transformer.localScale;
+            scale.x *= -1;
+            transformer.localScale = scale;
+        }
+        
     }
 
     private bool IsGrounded()

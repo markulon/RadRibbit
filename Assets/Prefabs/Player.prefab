@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6986042931000694716}
   - component: {fileID: 3063371740809747428}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: AudioListener
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60,7 +60,7 @@ GameObject:
   - component: {fileID: 8731942153703107523}
   m_Layer: 6
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Tounge
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -315,7 +315,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 9
+  m_GravityScale: 5
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -408,7 +408,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   invunerableTime: 1
-  maxHealth: 100
+  maxHealth: 3
   health: {fileID: 1111444093389516201}
 --- !u!61 &2056495515539790441
 BoxCollider2D:
@@ -442,7 +442,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.55}
+  m_Offset: {x: 0, y: -0.2}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
