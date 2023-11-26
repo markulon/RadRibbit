@@ -150,7 +150,7 @@ MonoBehaviour:
   Path: Spilldesign Fmod prosjekt/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638366127484350391
+  lastModified: 638366268605125822
   FileSizes:
   - Name: Desktop
     Value: 4922720
@@ -197,7 +197,7 @@ MonoBehaviour:
   Path: Spilldesign Fmod prosjekt/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638361660439117768
+  lastModified: 638366268605247538
   FileSizes:
   - Name: Desktop
     Value: 339456
@@ -352,7 +352,7 @@ MonoBehaviour:
   Path: Spilldesign Fmod prosjekt/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638366189322129147
+  lastModified: 638366268603667658
   FileSizes:
   - Name: Desktop
     Value: 1632
@@ -404,7 +404,7 @@ MonoBehaviour:
   - {fileID: -722985877425769519}
   StringsBanks:
   - {fileID: 9099841638045380897}
-  cacheTime: 638366242328750180
+  cacheTime: 638366268605247538
   cacheVersion: 131608
 --- !u!114 &290386677777832807
 MonoBehaviour:
@@ -475,7 +475,7 @@ MonoBehaviour:
   Path: Spilldesign Fmod prosjekt/Build/Desktop/Foley.bank
   Name: Foley
   StudioPath: bank:/Foley
-  lastModified: 638366242328750180
+  lastModified: 638366268603619029
   FileSizes:
   - Name: Desktop
     Value: 233024
@@ -495,7 +495,7 @@ MonoBehaviour:
   Path: Spilldesign Fmod prosjekt/Build/Desktop/Ambience.bank
   Name: Ambience
   StudioPath: bank:/Ambience
-  lastModified: 638360392886359587
+  lastModified: 638366268603430494
   FileSizes:
   - Name: Desktop
     Value: 466368
@@ -758,7 +758,7 @@ MonoBehaviour:
   Path: Spilldesign Fmod prosjekt/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638366189322151943
+  lastModified: 638366268603763806
   FileSizes:
   - Name: Desktop
     Value: 2092
