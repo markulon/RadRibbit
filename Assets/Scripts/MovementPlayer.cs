@@ -12,6 +12,7 @@ public class MovementPlayer : MonoBehaviour
     private BoxCollider2D coll;
     private Transform transformer;
     private bool climbable = false;
+    private bool isGrounded;
 
     private enum MovementPlayerState
     {
@@ -51,18 +52,14 @@ public class MovementPlayer : MonoBehaviour
         }
 
 
-        if (Input.GetButtonDown("Vertical") && IsGrounded() && Input.GetAxis("Vertical") > 0)
+        if (Input.GetButtonDown("Vertical") && isGrounded && Input.GetAxis("Vertical") > 0)
         {
             FMODUnity.RuntimeManager.PlayOneShot("event:/Foley/Froggy/Froggy_Jump", GetComponent<Transform>().position);
-
-        }
-
-        if (Input.GetAxis("Vertical") > 0 && IsGrounded() && !climbable)
-        {
-
-
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+
         }
+
+        IsGrounded();
 
         UpdateAnimationState();
 
