@@ -102,6 +102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   unlockedCage: 0
+  finish: {fileID: 0}
 --- !u!61 &1401701474622372830
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -186,7 +187,7 @@ MonoBehaviour:
       Data2: 1118530198
       Data3: -580326979
       Data4: -633712006
-    Path: event:/SFX/Cage_Unlock
+    Path: event:/SFX/Cage/Cage_Unlock
 --- !u!1 &6067097513212642699
 GameObject:
   m_ObjectHideFlags: 0

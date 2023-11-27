@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using FMODUnity;
+using FMODUnity;
 
 public class MovementPlayer : MonoBehaviour
 {
@@ -27,6 +28,7 @@ public class MovementPlayer : MonoBehaviour
     [SerializeField] private LayerMask jumpableGround;
 
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -49,7 +51,7 @@ public class MovementPlayer : MonoBehaviour
         }
 
 
-        if (Input.GetButtonDown("Vertical") && IsGrounded() && !climbable && Input.GetAxis("Vertical") > 0)
+        if (Input.GetButtonDown("Vertical") && IsGrounded() && Input.GetAxis("Vertical") > 0)
         {
             FMODUnity.RuntimeManager.PlayOneShot("event:/Foley/Froggy/Froggy_Jump", GetComponent<Transform>().position);
 
@@ -58,8 +60,8 @@ public class MovementPlayer : MonoBehaviour
         if (Input.GetAxis("Vertical") > 0 && IsGrounded() && !climbable)
         {
 
+
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-            //hopper her
         }
 
         UpdateAnimationState();
@@ -121,7 +123,7 @@ public class MovementPlayer : MonoBehaviour
 
     private bool IsGrounded()
     {
-        return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.down, .1f, jumpableGround);
+        return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.down, .4f, jumpableGround);
     }
 
     private void flipCharacter()
