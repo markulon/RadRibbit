@@ -12,8 +12,6 @@ public class SelectLevel : MonoBehaviour
 
     public void LoadLevel()
     {
-        Debug.Log("Loading level: " + levelToLoad);
-        Debug.Log("level index: " + SceneManager.GetActiveScene().buildIndex);
         SceneManager.LoadScene(levelToLoad);
     }
 }

@@ -5,40 +5,38 @@ using UnityEngine.SceneManagement;
 
 public class Health : MonoBehaviour
 {
+    [SerializeField] private int levelToLoad = 0;
     private Animator anim;
     private int heartsMax = 3;
-
-    public int hearts;
 
     void Start()
     {
         anim = GetComponent<Animator>();
-        hearts = MainManager.Instance.Hearts;
         Debug.Log(MainManager.Instance.Hearts);
-        if (hearts == 0)
+        if (MainManager.Instance.Hearts == 0)
         {
-            hearts = heartsMax;
+            MainManager.Instance.Hearts = heartsMax;
         }
     }
 
     public void ChangeHearts(int change)
     {
-        hearts += change;
+        MainManager.Instance.Hearts += change;
 
-        if (hearts > heartsMax)
+        if (MainManager.Instance.Hearts > heartsMax)
         {
-            hearts = heartsMax;
+            MainManager.Instance.Hearts = heartsMax;
         }
 
-        if (hearts <= 0)
+        if (MainManager.Instance.Hearts <= 0)
         {
-            Debug.Log("you dead bruv");
+            SceneManager.LoadScene(levelToLoad);
         }
     }
 
     void Update()
     {
-        anim.SetInteger("Health", hearts);
+        anim.SetInteger("Health", MainManager.Instance.Hearts);
     }
 
 }

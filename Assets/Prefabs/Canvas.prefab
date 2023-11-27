@@ -110,6 +110,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85e801b1ce8924d48a6d18e0f43ee78d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelToLoad: 6
   hearts: 3
 --- !u!1 &6833289384021953373
 GameObject:

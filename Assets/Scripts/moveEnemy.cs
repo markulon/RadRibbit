@@ -41,7 +41,9 @@ public class moveEnemy : MonoBehaviour
         if ((direction > 0 && facingRight) || (direction < 0 && !facingRight))
         {
             facingRight = !facingRight;
-            sprite.flipX = facingRight;
+            Vector3 scale = transformer.localScale;
+            scale.x *= -1;
+            transformer.localScale = scale;
         }
     }
 

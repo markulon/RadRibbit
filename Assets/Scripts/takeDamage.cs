@@ -8,7 +8,8 @@ public class takeDamage : MonoBehaviour
     public int maxHealth = 100;
     int currentHealth;
     private Animator anim;
-    // Start is called before the first frame update
+
+    public string enemySound = "event:/Foley/RadMan/RadMan_Hurt";
     
     public float invunerableTime = 1f;
     float nextAttackTime = 0f;
@@ -31,7 +32,7 @@ public class takeDamage : MonoBehaviour
 
             anim.SetTrigger("damage");
 
-            FMODUnity.RuntimeManager.PlayOneShot("event:/Foley/RadMan/RadMan_Hurt", GetComponent<Transform>().position);
+            FMODUnity.RuntimeManager.PlayOneShot(enemySound, GetComponent<Transform>().position);
 
             if (currentHealth <= 0)
             {

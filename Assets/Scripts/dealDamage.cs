@@ -13,7 +13,10 @@ public class dealDamage : MonoBehaviour
         }
         if (collision.gameObject.CompareTag("Boss"))
         {
-            collision.gameObject.GetComponent<takeDamageBOSS>().Damage(damage);
+            if (!collision.isTrigger) // Skip if the collider is a trigger collider
+            {
+                collision.gameObject.GetComponent<takeDamageBOSS>().Damage(damage);
+            }
         }
     }
     // Update is called once per frame

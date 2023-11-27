@@ -10,19 +10,18 @@ public class PlayerLife : MonoBehaviour
     private Animator anim;
     
     public float invunerableTime = 1f;
-    public int maxHealth = 3;
-    int currentHealth;
     float nextAttackTime = 0f;
 
     public Health health;
 
     private Vector3 initialPosition;
+    private float triggerCooldownTime = 0f;
+    private float triggerCooldownDuration = 0.2f;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        currentHealth = maxHealth;
         initialPosition = transform.position;
     }
     
@@ -33,29 +32,23 @@ public class PlayerLife : MonoBehaviour
             health.ChangeHearts(-damage);
 
             nextAttackTime = Time.time + invunerableTime;
-                
-            //currentHealth -= damage;
 
             anim.SetTrigger("damage");
-
-            if (currentHealth <= 0)
-            {
-                Die();
-            }
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("OutOfBounds"))
+        if (Time.time > triggerCooldownTime && collision.gameObject.CompareTag("OutOfBounds"))
         {
             RestartLevel();
              //FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/TMP_Death", GetComponent<Transform>().position);
-
+             
+            triggerCooldownTime = Time.time + triggerCooldownDuration;
         }
     }
 
-    private void Die()
+    public void PlayerDie()
     {
         rb.bodyType = RigidbodyType2D.Static;
         anim.SetTrigger("death");
