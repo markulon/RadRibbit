@@ -26,7 +26,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 1512
+  Length: 1550
 --- !u!114 &-8558979541034391310
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52,7 +52,7 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
-  MaxDistance: 8.6
+  MaxDistance: 2200
   Length: 0
 --- !u!114 &-8297903909506193021
 MonoBehaviour:
@@ -81,6 +81,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-7620560087382781002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Foley/SmolToad/SmolToad_Death
+  m_EditorClassIdentifier: 
+  Path: event:/Foley/SmolToad/SmolToad_Death
+  Guid:
+    Data1: -958687737
+    Data2: 1227669362
+    Data3: -1631818314
+    Data4: 955303837
+  Banks:
+  - {fileID: 3051894927576781218}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4090
 --- !u!114 &-7298741949372918691
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -177,7 +204,7 @@ MonoBehaviour:
   Path: Spilldesign Fmod prosjekt/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638366882814536613
+  lastModified: 638367146844986632
   FileSizes:
   - Name: Desktop
     Value: 4922720
@@ -224,10 +251,10 @@ MonoBehaviour:
   Path: Spilldesign Fmod prosjekt/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638366882814734786
+  lastModified: 638367146845600226
   FileSizes:
   - Name: Desktop
-    Value: 476352
+    Value: 494176
   Exists: 1
 --- !u!114 &-4989382252724140774
 MonoBehaviour:
@@ -282,7 +309,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 855
+  Length: 2000
 --- !u!114 &-4194488422990738617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -303,6 +330,33 @@ MonoBehaviour:
     Data4: -167679352
   Banks:
   - {fileID: -5012134216732322339}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &-3794991647457913109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Foley/SmolToad/SmolToad_Hurt
+  m_EditorClassIdentifier: 
+  Path: event:/Foley/SmolToad/SmolToad_Hurt
+  Guid:
+    Data1: -1477078334
+    Data2: 1111580925
+    Data3: -699334229
+    Data4: 1277396865
+  Banks:
+  - {fileID: 3051894927576781218}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -416,7 +470,7 @@ MonoBehaviour:
   IsOneShot: 0
   Parameters: []
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 10
   Length: 26455
 --- !u!114 &-843669969220892904
 MonoBehaviour:
@@ -460,7 +514,7 @@ MonoBehaviour:
   Path: Spilldesign Fmod prosjekt/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638366882813558161
+  lastModified: 638367146844040016
   FileSizes:
   - Name: Desktop
     Value: 1632
@@ -510,12 +564,14 @@ MonoBehaviour:
   - {fileID: -3473867546740297362}
   - {fileID: -8297903909506193021}
   - {fileID: -981192271911057845}
+  - {fileID: -7620560087382781002}
+  - {fileID: -3794991647457913109}
   EditorParameters: []
   MasterBanks:
   - {fileID: -722985877425769519}
   StringsBanks:
   - {fileID: 9099841638045380897}
-  cacheTime: 638366882814734786
+  cacheTime: 638367146845600226
   cacheVersion: 131608
 --- !u!114 &290386677777832807
 MonoBehaviour:
@@ -586,10 +642,10 @@ MonoBehaviour:
   Path: Spilldesign Fmod prosjekt/Build/Desktop/Foley.bank
   Name: Foley
   StudioPath: bank:/Foley
-  lastModified: 638366882813525280
+  lastModified: 638367146843944476
   FileSizes:
   - Name: Desktop
-    Value: 280320
+    Value: 385536
   Exists: 1
 --- !u!114 &4386339468169007538
 MonoBehaviour:
@@ -606,7 +662,7 @@ MonoBehaviour:
   Path: Spilldesign Fmod prosjekt/Build/Desktop/Ambience.bank
   Name: Ambience
   StudioPath: bank:/Ambience
-  lastModified: 638366268603430494
+  lastModified: 638367146841841121
   FileSizes:
   - Name: Desktop
     Value: 466368
@@ -691,7 +747,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 1382
+  Length: 1387
 --- !u!114 &6750424524620532674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -842,8 +898,8 @@ MonoBehaviour:
   Path: Spilldesign Fmod prosjekt/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638366882813592059
+  lastModified: 638367146844053648
   FileSizes:
   - Name: Desktop
-    Value: 2240
+    Value: 2290
   Exists: 1

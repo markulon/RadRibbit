@@ -396,7 +396,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 50
-  enemySound: event:/Foley/RadMan/RadMan_Hurt
+  enemySound: event:/Foley/RadMan/
   invunerableTime: 0.5
 --- !u!1 &5698345494133025485
 GameObject:
