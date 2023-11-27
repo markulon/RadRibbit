@@ -26,7 +26,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 1550
+  Length: 1207
 --- !u!114 &-8558979541034391310
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -204,10 +204,10 @@ MonoBehaviour:
   Path: Spilldesign Fmod prosjekt/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638366882814536613
+  lastModified: 638367201286148111
   FileSizes:
   - Name: Desktop
-    Value: 4922720
+    Value: 5780896
   Exists: 1
 --- !u!114 &-5534554135859792949
 MonoBehaviour:
@@ -251,10 +251,10 @@ MonoBehaviour:
   Path: Spilldesign Fmod prosjekt/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638366882814734786
+  lastModified: 638367224643681963
   FileSizes:
   - Name: Desktop
-    Value: 494176
+    Value: 558496
   Exists: 1
 --- !u!114 &-4989382252724140774
 MonoBehaviour:
@@ -418,6 +418,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2062
+--- !u!114 &-1268202043917237285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/YouWin
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/YouWin
+  Guid:
+    Data1: 255551691
+    Data2: 1112172159
+    Data3: 1038014627
+    Data4: -930986804
+  Banks:
+  - {fileID: -5012134216732322339}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-1161606639737530806
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -514,7 +541,7 @@ MonoBehaviour:
   Path: Spilldesign Fmod prosjekt/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638366882813558161
+  lastModified: 638367224642903717
   FileSizes:
   - Name: Desktop
     Value: 1632
@@ -566,12 +593,17 @@ MonoBehaviour:
   - {fileID: -981192271911057845}
   - {fileID: -7620560087382781002}
   - {fileID: -3794991647457913109}
+  - {fileID: 5240587089228174053}
+  - {fileID: 5832148224174540824}
+  - {fileID: 2872476662719378378}
+  - {fileID: 6394561064951786516}
+  - {fileID: -1268202043917237285}
   EditorParameters: []
   MasterBanks:
   - {fileID: -722985877425769519}
   StringsBanks:
   - {fileID: 9099841638045380897}
-  cacheTime: 638366882814734786
+  cacheTime: 638367224643681963
   cacheVersion: 131608
 --- !u!114 &290386677777832807
 MonoBehaviour:
@@ -627,6 +659,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 17777
+--- !u!114 &2872476662719378378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Portal/Portal_Closed
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Portal/Portal_Closed
+  Guid:
+    Data1: 1173717507
+    Data2: 1287722782
+    Data3: 1880325538
+    Data4: 1881258648
+  Banks:
+  - {fileID: -5012134216732322339}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &3051894927576781218
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -642,7 +701,7 @@ MonoBehaviour:
   Path: Spilldesign Fmod prosjekt/Build/Desktop/Foley.bank
   Name: Foley
   StudioPath: bank:/Foley
-  lastModified: 638366882813525280
+  lastModified: 638367201283973173
   FileSizes:
   - Name: Desktop
     Value: 385536
@@ -662,11 +721,38 @@ MonoBehaviour:
   Path: Spilldesign Fmod prosjekt/Build/Desktop/Ambience.bank
   Name: Ambience
   StudioPath: bank:/Ambience
-  lastModified: 638367146841841121
+  lastModified: 638367169063175780
   FileSizes:
   - Name: Desktop
     Value: 466368
   Exists: 1
+--- !u!114 &5240587089228174053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Credits
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Credits
+  Guid:
+    Data1: 2143194701
+    Data2: 1111746060
+    Data3: 1247050629
+    Data4: 1184377086
+  Banks:
+  - {fileID: -5752816678623386511}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 20445
 --- !u!114 &5363412033414948003
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -721,6 +807,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 46451
+--- !u!114 &5832148224174540824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Intro
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Intro
+  Guid:
+    Data1: -1742540182
+    Data2: 1206947316
+    Data3: 1936855440
+    Data4: -1441013132
+  Banks:
+  - {fileID: -5752816678623386511}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 46363
 --- !u!114 &5872057260663098316
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -748,6 +861,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1387
+--- !u!114 &6394561064951786516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Ladder
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Ladder
+  Guid:
+    Data1: 630114202
+    Data2: 1266437283
+    Data3: 1629668993
+    Data4: 1308102761
+  Banks:
+  - {fileID: -5012134216732322339}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &6750424524620532674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -898,8 +1038,10 @@ MonoBehaviour:
   Path: Spilldesign Fmod prosjekt/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638366882813592059
+  lastModified: 638367224642914473
   FileSizes:
   - Name: Desktop
-    Value: 2290
+    Value: 2476
+  - Name: HTML5
+    Value: 2476
   Exists: 1

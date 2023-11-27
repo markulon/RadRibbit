@@ -18,6 +18,7 @@ public class anykey : MonoBehaviour
         if (Input.anyKeyDown)
         {
             SceneManager.LoadScene(levelToLoad);
+            FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/UI/Start", GetComponent<Transform>().position);
         }
     }
 }

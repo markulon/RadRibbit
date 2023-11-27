@@ -59,7 +59,7 @@ public class MovementPlayer : MonoBehaviour
 
         }
 
-        IsGrounded();
+        isGrounded = IsGrounded();
 
         UpdateAnimationState();
 
@@ -132,4 +132,5 @@ public class MovementPlayer : MonoBehaviour
             transformer.localScale = scale;
         }
     }
+    //FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Ladder", GetComponent<Transform>().position);
 }

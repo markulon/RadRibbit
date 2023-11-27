@@ -18,6 +18,11 @@ public class Finish : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (collision.gameObject.CompareTag("Player") && unlocked == false)
+        {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Portal/Portal_Closed", GetComponent<Transform>().position);
+        }
+
         if (collision.gameObject.CompareTag("Player") && unlocked == true)
         {
             FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Portal/Portal_Go", GetComponent<Transform>().position);

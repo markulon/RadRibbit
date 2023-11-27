@@ -238,11 +238,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 2134725554
-      Data2: 1120168840
-      Data3: -1432238149
-      Data4: 1757537691
-    Path: event:/Music/Main title
+      Data1: 1744165002
+      Data2: 1326418761
+      Data3: -271819873
+      Data4: 2124700242
+    Path: event:/SFX/GameOver
   Event: 
   PlayEvent: 1
   StopEvent: 2

@@ -232,6 +232,11 @@ PrefabInstance:
       propertyPath: maxHealth
       value: 100
       objectReference: {fileID: 0}
+    - target: {fileID: 618878751470644554, guid: 22a0597951f52fa4188d8576e256b521,
+        type: 3}
+      propertyPath: enemySound
+      value: event:/Foley/Useless/Useless_Hurt
+      objectReference: {fileID: 0}
     - target: {fileID: 4769842265698034601, guid: 22a0597951f52fa4188d8576e256b521,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5446,6 +5451,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Pausemenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 2798943684098603755, guid: e7778adeb0379ec49b8f4bdf85eba646,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5944727940369068393, guid: e7778adeb0379ec49b8f4bdf85eba646,
         type: 3}

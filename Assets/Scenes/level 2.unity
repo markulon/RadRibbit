@@ -1281,6 +1281,11 @@ PrefabInstance:
       propertyPath: maxHealth
       value: 200
       objectReference: {fileID: 0}
+    - target: {fileID: 618878751470644554, guid: 3e9c7572dbd46084a9b6897e8cb6b52d,
+        type: 3}
+      propertyPath: enemySound
+      value: event:/Foley/SmolToad/SmolToad_Hurt
+      objectReference: {fileID: 0}
     - target: {fileID: 4769842265698034601, guid: 3e9c7572dbd46084a9b6897e8cb6b52d,
         type: 3}
       propertyPath: m_LocalPosition.x

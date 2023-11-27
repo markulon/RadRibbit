@@ -13,6 +13,7 @@ public class PauseMenu : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.P))
         {
             TogglePause();
+            FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/UI/Start", GetComponent<Transform>().position);
         }
     }
 
