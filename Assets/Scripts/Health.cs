@@ -9,10 +9,11 @@ public class Health : MonoBehaviour
     private Animator anim;
     private int heartsMax = 3;
 
+    [SerializeField] private float delayBeforeActivation = .5f; // Time in seconds
+
     void Start()
     {
         anim = GetComponent<Animator>();
-        Debug.Log(MainManager.Instance.Hearts);
         if (MainManager.Instance.Hearts == 0)
         {
             MainManager.Instance.Hearts = heartsMax;
@@ -30,13 +31,19 @@ public class Health : MonoBehaviour
 
         if (MainManager.Instance.Hearts <= 0)
         {
-            SceneManager.LoadScene(levelToLoad);
+            StartCoroutine(WaitAndLoadScene(delayBeforeActivation)); // 5 seconds wait
         }
     }
 
     void Update()
     {
         anim.SetInteger("Health", MainManager.Instance.Hearts);
+    }
+
+    private IEnumerator WaitAndLoadScene(float waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
+        SceneManager.LoadScene(levelToLoad);
     }
 
 }

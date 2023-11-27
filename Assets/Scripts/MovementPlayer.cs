@@ -43,6 +43,11 @@ public class MovementPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (MainManager.Instance.Hearts <= 0)
+        {
+            anim.SetTrigger("death");
+            return;
+        }
         dirX = Input.GetAxis("Horizontal");
         rb.velocity = new Vector2(dirX * moveSpeed, rb.velocity.y);
 
@@ -120,7 +125,7 @@ public class MovementPlayer : MonoBehaviour
 
     private bool IsGrounded()
     {
-        return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.down, .4f, jumpableGround);
+        return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.down, .6f, jumpableGround);
     }
 
     private void flipCharacter()
