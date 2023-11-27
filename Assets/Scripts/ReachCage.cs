@@ -18,6 +18,12 @@ public class ReachCage : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (collision.gameObject.CompareTag("Player")) 
+        {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Cage/Cage_Closed", GetComponent<Transform>().position);
+
+        }
+
         if (collision.gameObject.CompareTag("Tounge"))
         {
             unlockedCage = true;
@@ -26,6 +32,9 @@ public class ReachCage : MonoBehaviour
             //maybe play a sound here
             //it will
 
+
         }
-    }
+
+
+     }
 }

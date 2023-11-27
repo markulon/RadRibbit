@@ -12,7 +12,7 @@ public class FMODEventTrigger : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         // Check if the event has not been triggered yet
-        if (!hasEventBeenTriggered && collision.gameObject.CompareTag("Player"))
+        if (!hasEventBeenTriggered && collision.gameObject.CompareTag("Tounge"))
         {
             // Trigger the FMOD event using EventReference
             FMODUnity.RuntimeManager.PlayOneShot(fmodEventReference, transform.position);

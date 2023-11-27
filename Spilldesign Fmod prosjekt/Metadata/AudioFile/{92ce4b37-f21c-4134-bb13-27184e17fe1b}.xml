@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{92ce4b37-f21c-4134-bb13-27184e17fe1b}">
+		<property name="assetPath">
+			<value>Metal, Impact, Designed Metal Impact, Aggressive, Resonating Springs 03 SND86399 3.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>96</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>2.1901354166666667</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{cda93a9b-ed27-4eda-8765-0c0a183c26a9}</destination>
+		</relationship>
+	</object>
+</objects>

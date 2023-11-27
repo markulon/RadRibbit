@@ -627,6 +627,7 @@ GameObject:
   - component: {fileID: 427234115}
   - component: {fileID: 427234116}
   - component: {fileID: 427234117}
+  - component: {fileID: 427234118}
   m_Layer: 0
   m_Name: Boss
   m_TagString: Boss
@@ -648,6 +649,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   finish: {fileID: 786215044}
   maxHealth: 150
+  invunerableTime: 0.5
 --- !u!61 &427234109
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -887,6 +889,37 @@ MonoBehaviour:
   Event: 
   PlayEvent: 1
   StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 1
+  Preload: 1
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 8.6
+--- !u!114 &427234118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 427234107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -2015916978
+      Data2: 1178507240
+      Data3: -2042113615
+      Data4: 155398639
+    Path: event:/SFX/Radiation
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0

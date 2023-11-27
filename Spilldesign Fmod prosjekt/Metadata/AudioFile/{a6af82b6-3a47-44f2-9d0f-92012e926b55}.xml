@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{a6af82b6-3a47-44f2-9d0f-92012e926b55}">
+		<property name="assetPath">
+			<value>Doors, Hardware, Wooden Door, Interior Apartment, Door Handle, Grab, Release, Off Axis 01 SND89123.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>192</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>1.6179375</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{cda93a9b-ed27-4eda-8765-0c0a183c26a9}</destination>
+		</relationship>
+	</object>
+</objects>

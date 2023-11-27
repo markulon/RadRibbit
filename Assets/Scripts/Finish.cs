@@ -23,7 +23,7 @@ public class Finish : MonoBehaviour
             FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/Portal/Portal_Go", GetComponent<Transform>().position);
             Invoke("CompleteLevel", 1f);
         }
-        
+
     }
 
     private void CompleteLevel()
