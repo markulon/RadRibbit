@@ -1,4 +1,4 @@
-# Rad Ribbit ![Idle 13](https://github.com/markulon/FroggyTheFrog/assets/82941572/02ff9f55-c10e-4fbc-90e8-8fec4386096b)
+#  ![Idle 13](https://github.com/markulon/FroggyTheFrog/assets/82941572/02ff9f55-c10e-4fbc-90e8-8fec4386096b) Rad Ribbit ![Idle 13](https://github.com/markulon/FroggyTheFrog/assets/82941572/02ff9f55-c10e-4fbc-90e8-8fec4386096b)
 <img width="200" alt="image" src="https://github.com/markulon/FroggyTheFrog/assets/82941572/b0c80bdd-ce23-4db0-bb3e-89f5c2fc120e">
 
 ## 🎮 The Game 🌟
